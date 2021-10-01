@@ -4,7 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">This is my survey form title</h1>
+    <p id="description">a short explanation of the form</p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Please enter your name" />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Please enter your email address"
+      />
+      <label for="number" id="number-label">Age</label>
+      <input
+        type="number"
+        id="number"
+        min="14"
+        max="99"
+        placeholder="Please enter your age"
+      />
+      <select name="" id="dropdown">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <fieldset>
+        <legend>Radio buttons</legend>
+        <p>Select one of these options</p>
+        <input type="radio" name="" id="" />
+        <label for="">Button 1</label>
+        <input type="radio" name="" id="" />
+        <label for="">Button 2</label>
+        <input type="radio" name="" id="" />
+        <label for="">Button 3</label>
+      </fieldset>
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <input type="checkbox" name="" id="" value="Value 1" />
+        <label for="">Check 1</label>
+        <input type="checkbox" name="" id="" value="Value 2" />
+        <label for="">Check 2</label>
+        <input type="checkbox" name="" id="" value="Value 3" />
+        <label for="">Check 3</label>
+        <input type="checkbox" name="" id="" value="Value 4" />
+        <label for="">Check 4</label>
+        <input type="checkbox" name="" id="" value="Value 5" />
+        <label for="">Check 5</label>
+      </fieldset>
+      <p>Please leave your comments here</p>
+      <input type="textarea" />
+      <input type="submit" />
+    </form>
+  </body>
 </html>
