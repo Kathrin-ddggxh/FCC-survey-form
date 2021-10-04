@@ -11,7 +11,10 @@ h1 {
 
 p {
   font-size: 20px;
-  text-align: center;
+}
+
+label {
+  padding: 20px 0 10px 0;
 }
 
 .container {
@@ -20,8 +23,10 @@ p {
   align-items: center;
 }
 
-.personal {
+.personal,
+.select-discipline,
+.insurance,
+.ability-level {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
