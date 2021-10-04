@@ -7,14 +7,34 @@ body {
 h1 {
   font-size: 42px;
   text-align: center;
+  margin: 52px 0 28px 0;
 }
 
 p {
   font-size: 20px;
+  margin-top: 52px;
 }
 
 label {
+  padding: 4px 0;
+}
+
+#description {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+}
+
+.personal > label {
   padding: 20px 0 10px 0;
+}
+
+.personal > input,
+select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  border: solid rgb(194, 194, 194) 1px;
 }
 
 .container {
@@ -29,4 +49,12 @@ label {
 .ability-level {
   display: flex;
   flex-direction: column;
+}
+
+.insurance input {
+  position: relative;
+  top: 4px;
+  margin-right: 8px;
+  min-height: 22px;
+  min-width: 22px;
 }

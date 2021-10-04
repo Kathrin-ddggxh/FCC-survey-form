@@ -39,6 +39,7 @@
         <p>Which class would you most be interested in?</p>
         <div class="form-group select-discipline">
           <select name="discipline" id="dropdown">
+            <option disabled selected value>Select favourite discipline</option>
             <option value="">Longsword</option>
             <option value="">Sabre</option>
             <option value="">Sword and Buckler</option>
@@ -49,8 +50,17 @@
         </div>
         <p>Do you have insurance cover?</p>
         <div class="form-group insurance">
-          <label for="yes"> <input type="radio" name="yes" id="yes" />Yes</label
-          ><label for="no"> <input type="radio" name="no" id="no" />No</label>
+          <label for="yes">
+            <input
+              type="radio"
+              name="insurance"
+              value="yes"
+              id="yes"
+              checked
+            />Yes</label
+          ><label for="no">
+            <input type="radio" name="insurance" value="no" id="no" />No</label
+          >
         </div>
         <p>What is your ability level?</p>
         <div class="form-group ability-level">
