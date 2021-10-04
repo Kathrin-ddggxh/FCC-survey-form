@@ -8,62 +8,71 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Event registration details</h1>
-    <p id="description">
-      In order to make this tournament run smoothly please complete the
-      following information
-    </p>
-    <form action="" id="survey-form">
-      <div class="form-group">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Enter your name" />
-        <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Enter your email address" />
-        <label for="number" id="number-label">Age</label>
-        <input
-          type="number"
-          id="number"
-          min="18"
-          max="99"
-          placeholder="Enter your age"
-        />
-      </div>
-      <div class="form-group">
-        <p>Which class would you most be interested in?</p>
-        <select name="discipline" id="dropdown">
-          <option value="">Longsword</option>
-          <option value="">Sabre</option>
-          <option value="">Sword and Buckler</option>
-          <option value="">Sidesword</option>
-          <option value="">Rapier</option>
-          <option value="">Poleaxe</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <p>Do you have insurance cover?</p>
-        <input type="radio" name="yes" id="yes" />
-        <label for="yes">Yes</label>
-        <input type="radio" name="no" id="no" />
-        <label for="no">No</label>
-      </div>
-      <div class="form-group">
-        <p>What is your ability level?</p>
-        <input type="checkbox" name="" id="" value="Value 1" />
-        <label for="">Beginner</label>
-        <input type="checkbox" name="" id="" value="Value 2" />
-        <label for="">Intermediate</label>
-        <input type="checkbox" name="" id="" value="Value 3" />
-        <label for="">Expert</label>
-        <input type="checkbox" name="" id="" value="Value 4" />
-        <label for="">Instructor</label>
-      </div>
-      <div class="form-group">
-        <p>Please leave any additional comments here</p>
-        <input type="textarea" />
-      </div>
-      <div class="form-group">
-        <input type="submit" />
-      </div>
-    </form>
+    <div class="container">
+      <header>
+        <h1 id="title">Event registration details</h1>
+        <p id="description">
+          In order to make this tournament run smoothly please complete the
+          following information
+        </p>
+      </header>
+      <form action="" id="survey-form">
+        <div class="form-group personal">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="99"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which class would you most be interested in?</p>
+          <select name="discipline" id="dropdown">
+            <option value="">Longsword</option>
+            <option value="">Sabre</option>
+            <option value="">Sword and Buckler</option>
+            <option value="">Sidesword</option>
+            <option value="">Rapier</option>
+            <option value="">Poleaxe</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Do you have insurance cover?</p>
+          <input type="radio" name="yes" id="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="no" id="no" />
+          <label for="no">No</label>
+        </div>
+        <div class="form-group">
+          <p>What is your ability level?</p>
+          <input type="checkbox" name="" id="" value="Value 1" />
+          <label for="">Beginner</label>
+          <input type="checkbox" name="" id="" value="Value 2" />
+          <label for="">Intermediate</label>
+          <input type="checkbox" name="" id="" value="Value 3" />
+          <label for="">Expert</label>
+          <input type="checkbox" name="" id="" value="Value 4" />
+          <label for="">Instructor</label>
+        </div>
+        <div class="form-group">
+          <p>Please leave any additional comments here</p>
+          <input type="textarea" />
+        </div>
+        <div class="form-group">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
