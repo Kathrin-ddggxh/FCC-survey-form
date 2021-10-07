@@ -2,6 +2,22 @@ body {
   /* background-image: url(images/76175238_2598742946831223_5170738688459538432_n.jpg);
   background-size: cover; */
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.background-img::before {
+  content: "";
+  background-image: url(images/76175238_2598742946831223_5170738688459538432_n.jpg);
+
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
 }
 
 h1 {
@@ -30,6 +46,7 @@ button {
   padding: 0.5em 0;
   border-radius: 3px;
   border: none;
+  margin-bottom: 4em;
 }
 
 #description {
@@ -37,6 +54,7 @@ button {
   font-style: italic;
   text-align: center;
   margin: 0 0 1.5em 0;
+  padding: 0 4em;
 }
 
 .personal > label {
@@ -53,6 +71,7 @@ textarea {
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
