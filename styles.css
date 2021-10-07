@@ -5,34 +5,49 @@ body {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 2.5rem;
   text-align: center;
-  margin: 52px 0 28px 0;
+  margin: 2em 0 1em 0;
 }
 
 p {
-  font-size: 20px;
-  margin-top: 52px;
+  font-size: 1.25rem;
+  margin-top: 3em;
 }
 
 label {
-  padding: 4px 0;
+  padding: 0.25em;
+}
+
+textarea {
+  font-family: inherit;
+  margin-bottom: 1em;
+}
+
+button {
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5em 0;
+  border-radius: 3px;
+  border: none;
 }
 
 #description {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: italic;
   text-align: center;
+  margin: 0 0 1.5em 0;
 }
 
 .personal > label {
-  padding: 20px 0 10px 0;
+  padding: 1.25em 0 0.5em 0;
 }
 
 .personal > input,
-select {
-  font-size: 16px;
-  padding: 8px;
+select,
+textarea {
+  font-size: 1rem;
+  padding: 0.5em;
   border-radius: 3px;
   border: solid rgb(194, 194, 194) 1px;
 }
@@ -57,4 +72,12 @@ select {
   margin-right: 8px;
   min-height: 22px;
   min-width: 22px;
+}
+
+.ability-level input {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  min-height: 20px;
+  min-width: 20px;
 }
