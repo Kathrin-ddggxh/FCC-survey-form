@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
   /* background-image: url(images/76175238_2598742946831223_5170738688459538432_n.jpg);
   background-size: cover; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
+  color: white;
 }
 
 .background-img::before {
@@ -24,11 +27,12 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
   margin: 2em 0 1em 0;
+  color: rgb(0, 0, 0);
 }
 
 p {
   font-size: 1.25rem;
-  margin-top: 3em;
+  margin-top: 2.3em;
 }
 
 label {
@@ -38,6 +42,7 @@ label {
 textarea {
   font-family: inherit;
   margin-bottom: 1em;
+  width: 96%;
 }
 
 button {
@@ -46,7 +51,17 @@ button {
   padding: 0.5em 0;
   border-radius: 3px;
   border: none;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
+  background-color: rgb(109, 0, 0);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#survey-form {
+  background-color: rgb(105, 82, 73, 0.9);
+  padding: 2.5rem 3.5rem;
+  border-radius: 3px;
 }
 
 #description {
@@ -55,6 +70,7 @@ button {
   text-align: center;
   margin: 0 0 1.5em 0;
   padding: 0 4em;
+  color: rgb(0, 0, 0);
 }
 
 .personal > label {
@@ -64,7 +80,7 @@ button {
 .personal > input,
 select,
 textarea {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0.5em;
   border-radius: 3px;
   border: solid rgb(194, 194, 194) 1px;
@@ -99,4 +115,10 @@ textarea {
   margin-right: 10px;
   min-height: 20px;
   min-width: 20px;
+}
+
+@media (max-width: 460px) {
+  #description {
+    padding: 0 1em;
+  }
 }
