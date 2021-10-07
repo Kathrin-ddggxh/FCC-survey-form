@@ -96,7 +96,8 @@ textarea {
 .personal,
 .select-discipline,
 .insurance,
-.ability-level {
+.ability-level,
+.equipment {
   display: flex;
   flex-direction: column;
 }
@@ -109,7 +110,7 @@ textarea {
   min-width: 22px;
 }
 
-.ability-level input {
+.equipment input {
   position: relative;
   top: 5px;
   margin-right: 10px;

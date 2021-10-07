@@ -20,21 +20,31 @@
         <form action="" id="survey-form">
           <div class="form-group personal">
             <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
 
             <label for="email" id="email-label">Email</label>
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Enter your email address"
+              required
             />
-            <label for="number" id="number-label">Age</label>
+            <label for="age" id="age-label">Age</label>
             <input
               type="number"
-              id="number"
+              id="age"
+              name="age"
               min="18"
               max="99"
               placeholder="Enter your age"
+              required
             />
           </div>
           <p>Which class would you most be interested in?</p>
@@ -43,12 +53,12 @@
               <option disabled selected value>
                 Select favourite discipline
               </option>
-              <option value="">Longsword</option>
-              <option value="">Sabre</option>
-              <option value="">Sword and Buckler</option>
-              <option value="">Sidesword</option>
-              <option value="">Rapier</option>
-              <option value="">Poleaxe</option>
+              <option value="longsword">Longsword</option>
+              <option value="sabre">Sabre</option>
+              <option value="buckler">Sword and Buckler</option>
+              <option value="sidesword">Sidesword</option>
+              <option value="rapier">Rapier</option>
+              <option value="poleaxe">Poleaxe</option>
             </select>
           </div>
           <p>Do you have insurance cover?</p>
@@ -72,40 +82,74 @@
           </div>
           <p>What is your ability level?</p>
           <div class="form-group ability-level">
-            <label for="">
+            <select name="ability" id="dropdown">
+              <option disabled selected value>Select your level</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="expert">Expert</option>
+              <option value="instructor">Instructor</option>
+            </select>
+          </div>
+          <p>What equipment do you have?</p>
+          <div class="form-group equipment">
+            <label for="mask">
               <input
                 type="checkbox"
-                name=""
-                id=""
-                value="Value 1"
-              />Beginner</label
+                name="equipment"
+                id="mask"
+                value="fencing-mask"
+              />Fencing mask</label
             >
 
-            <label for="">
+            <label for="gorget">
               <input
                 type="checkbox"
-                name=""
-                id=""
-                value="Value 2"
-              />Intermediate</label
+                name="equipment"
+                id="gorget"
+                value="gorget"
+              />Gorget</label
             >
 
-            <label for="">
+            <label for="jacket">
               <input
                 type="checkbox"
-                name=""
-                id=""
-                value="Value 3"
-              />Expert</label
+                name="equipment"
+                id="jacket"
+                value="fencing-jacket"
+              />350N fencing jacket</label
             >
 
-            <label for="">
+            <label for="plastron">
               <input
                 type="checkbox"
-                name=""
-                id=""
-                value="Value 4"
-              />Instructor</label
+                name="equipment"
+                id="plastron"
+                value="plastron"
+              />Plastron (required for women)</label
+            >
+            <label for="gloves">
+              <input
+                type="checkbox"
+                name="equipment"
+                id="gloves"
+                value="gloves"
+              />Gloves</label
+            >
+            <label for="elbow-pads">
+              <input
+                type="checkbox"
+                name="equipment"
+                id="elbow-pads"
+                value="elbow-pads"
+              />Hard elbow pads</label
+            >
+            <label for="knee-shin-pads">
+              <input
+                type="checkbox"
+                name="equipment"
+                id="knee-shin-pads"
+                value="knee-shin-pads"
+              />Hard knee and shin pads</label
             >
           </div>
           <div class="form-group">
